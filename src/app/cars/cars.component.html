@@ -1,0 +1,73 @@
+
+<!--<button [disabled]="!canAddCar" class="btn btn-primary">Добавить машину</button>-->
+<!--<input type="text" class="form-control" [(ngModel)]="carName">
+
+<button class="btn btn-primary" (click)="addCar()" >Добавить машину</button>
+
+<p *ngIf="!addCarSt; else succSt"> Машина не добавлена.</p>
+<ng-template #succSt>
+    <p> Машина добавлена!</p>
+</ng-template>-->
+
+
+<!--<p>{{ addCarStatus }}</p>-->
+
+
+
+<!--<app-car *ngFor="let car of cars"></app-car>-->
+
+
+<!--<ul>
+    <li *ngFor="let item of items; let idx = index">
+        <b>{{ idx+1 }}</b> - <i>{{ item.name }}</i>
+    </li>
+</ul>-->
+
+<!--<ul>
+    <li *ngFor="let car of cars; let idx = index">
+        <div
+                [ngStyle]="{backgroundColor: (idx+1)%2===0 ? 'red' : 'green', 'color': 'white'}"
+                [ngClass]="{'big-text': setBigCarText(car)}"
+        >
+            <b>{{ idx+1 }}</b> - <i>{{ car }}</i>
+        </div>
+    </li>
+</ul>-->
+
+<!--<ul>
+    <li *ngFor="let date of dates; let idx = index">
+        <div>
+            <b>{{ idx+1 }}</b> - <i>{{ date | uppercase }}</i>
+        </div>
+    </li>
+</ul>-->
+
+<!--1.<input type="text" class="form-control" (input)="onKeyUp($event)">-->
+<!--2.<input type="text" class="form-control" #myinp (input)="onKeyUp(myinp.value)">-->
+<!--<input type="text" class="form-control" (keyup.enter)="onKeyUp($event)">
+<input type="text" class="form-control"  [(ngModel)]="inputText">
+<p> {{ inputText }} </p>-->
+
+
+
+<!--<input type="text" class="form-control" [(ngModel)]="carName">
+<input type="text" class="form-control" [(ngModel)]="carYear">
+<button class="btn btn-primary" (click)="addCar()" >Добавить машину</button>-->
+
+<!--_______________________________________________________________
+<p>Форма добавления машин</p>
+<hr>
+
+<app-add-car (onAddCar)="updateCarList($event)"></app-add-car>
+
+<hr>
+    <div class="btn btn-success" (click)="changeCarName()">Изменить имя машины</div>
+<hr>
+<div class="list-group">
+    <app-car class="list-group-item" *ngFor="let car of cars" [carItem]="car" [name]="car.name">
+
+        <h4 #carHeading class="list-group-item-heading">Название: {{ car.name }},</h4>
+        <p class="list-group-item-text"> Год: {{ car.year }}</p>
+    </app-car>
+</div>-->
+

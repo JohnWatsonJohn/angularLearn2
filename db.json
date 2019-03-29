@@ -1,0 +1,32 @@
+{
+  "title": {
+    "value": "Менеджер машин"
+  },
+  "cars": [
+    {
+      "name": "Ford",
+      "color": "red",
+      "id": 1
+    },
+    {
+      "name": "Lada",
+      "color": "pink",
+      "id": 2
+    },
+    {
+      "name": "Mazda",
+      "color": "green",
+      "id": 3
+    },
+    {
+      "name": "Audi",
+      "color": "yellow",
+      "id": 4
+    },
+    {
+      "name": "",
+      "color": "blue",
+      "id": 5
+    }
+  ]
+}
