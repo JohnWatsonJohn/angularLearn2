@@ -275,7 +275,7 @@ export class AppComponent implements OnInit{
 }
 --------------------------------------------------------------------------------------------*/
 
-
+/*
 import {Component, OnInit} from '@angular/core';
 import {CarsjService} from "./carsj.service";
 //import { MapOperator } from "rxjs/internal/operators/map";
@@ -310,13 +310,14 @@ export class AppComponent implements OnInit{
     cars: Cars[] = [];
     carName: string = '';
     appTitle;
-
+    //public appTitle$: Observable<string>;
     constructor(private carsjService: CarsjService){}
 
 
     ngOnInit(){
 
-        this.appTitle = this.carsjService.getAppTitle();
+        //this.appTitle = this.carsjService.getAppTitle();
+        this.carsjService.getAppTitle().subscribe((title:string)=>  this.appTitle = title );
 
     }
 
@@ -362,5 +363,16 @@ export class AppComponent implements OnInit{
 
 
 }
+-------------------------------------------------------------------------------------------------*/
 
 
+
+import { Component } from '@angular/core';
+
+@Component({
+    selector: 'app-root',
+    templateUrl: './app.component.html'
+})
+export class AppComponent {
+
+}

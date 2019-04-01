@@ -1,4 +1,4 @@
-import {Injectable} from "@angular/core";
+/*import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {HttpHeaders} from "@angular/common/http";
 import { HttpResponse } from "@angular/common/http";
@@ -12,17 +12,28 @@ import { throwError } from "rxjs";
 
 @Injectable()
 export class CarsjService {
+   // public appTitle$: Observable<string>;
 
     constructor(private http: HttpClient) {}
 
 
+    //getAppTitle() {
+
+       // return this.http.get('http://localhost:3000/title')
+           // .pipe(map((response:Response)=>response.json()))
+           // .pipe(delay(3000))
+            //.pipe(map((dt)=>dt.value))
+            //.pipe(tap(dt.value)=>console.log(dt.value))
+    //}
+
     getAppTitle() {
 
-        return this.http.get('http://localhost:3000/title')
-           // .pipe(map((response:Response)=>response.json()))
-            .pipe(delay(3000))
-            .pipe(map((dt)=>dt.value))
-            //.pipe(tap(dt.value)=>console.log(dt.value))
+        return this.http.get('http://localhost:3000/title') .pipe(
+            delay(3000),
+        // Логирование входящих данный
+           // tap((args)=>console.log(args),
+         //map((dt)=>dt.value)
+        )
     }
 
     getCars(){
@@ -60,3 +71,4 @@ export class CarsjService {
 
     }
 }
+*/

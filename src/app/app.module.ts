@@ -40,35 +40,49 @@ import { NgModule } from '@angular/core';
 //import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { CarComponent } from './car/car.component';
+//import { CarComponent } from './car/car.component';
 //import { AddCarComponent } from './add-car/add-car.component';
 //import {CarsService} from "./cars.service";
 //import {ConsoleService} from "./console.service";
 //import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule} from "@angular/common/http";
-import {CarsjService} from "./carsj.service";
+//import {CarsjService} from "./carsj.service";
 //import { Subscription } from 'rxjs';
 //import { RequestOptions, ResponseContentType } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { HomePageComponent } from './home-page/home-page.component';
+import { CarsPageComponent } from './cars-page/cars-page.component';
+import { CarsService } from './cars.service';
+import {AppRoutingModule} from "./app-routing.module";
+import { AboutCarComponent } from './about-car/about-car.component';
+//import {Routes, RouterModule} from "@angular/router";
+
+
+
 @NgModule({
     declarations: [
         AppComponent,
-        CarComponent,
+        HomePageComponent,
+        CarsPageComponent,
+        AboutCarComponent
+       // CarComponent,
         //AddCarComponent
+
     ],
     imports: [
         BrowserModule,
         FormsModule,
         //HttpModule,
         ReactiveFormsModule,
-        HttpClientModule
+        HttpClientModule,
+        AppRoutingModule
         //Subscription
     ],
     providers: [
-        //CarsService,
+        CarsService,
          //ConsoleService
-        CarsjService
+
 
     ],
     bootstrap: [AppComponent],

@@ -30,7 +30,7 @@ export class AddCarComponent implements OnInit {
 }
 ---------------------------------------------------------------------------*/
 
-
+/*
 import { Component,
    // EventEmitter, Output
 } from '@angular/core';
@@ -55,4 +55,4 @@ export class AddCarComponent{
         this.carName = '';
     }
 
-}
+}*/

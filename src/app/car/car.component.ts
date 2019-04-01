@@ -70,7 +70,7 @@ export class CarComponent implements OnInit, OnChanges, DoCheck, AfterContentIni
 
 }
 --------------------------------------------------------------------------------------------------*/
-
+/*
 import { Component, Input } from '@angular/core';
 import { ConsoleService } from "../console.service";
 
@@ -101,4 +101,4 @@ export class CarComponent {
         this.consServ.log(`${this.car.name} status = ${type}`);
     }
 
-}
+}*/
